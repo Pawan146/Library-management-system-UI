@@ -16,21 +16,59 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Library Management System
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This is a Library Management System built with Next.js. The application allows users to view, borrow, and return books. It also includes authentication features such as login and logout.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- View available books
+- Borrow books
+- Return borrowed books
+- View borrowed book history
+- User authentication (login and logout)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Next.js
+- React
+- JavaScript
+- CSS
+- `react-toastify` for notifications
+- `js-cookie` for cookie management
 
-## Deploy on Vercel
+## Getting Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+### Install dependencies:
+
+    npm install
+    # or
+    yarn install
+
+### Configuration
+    NEXT_PUBLIC_API_URL=http://your-api-url.com
+
+### Project Structure
+
+    pages/: Contains the Next.js pages.
+    index.js: The home page.
+    book.js: The page to view and borrow books.
+    borrowed.js: The page to view borrowed book history.
+    api/: Contains API route handlers.
+    components/: Contains reusable React components.
+    services/: Contains API service functions.
+    styles/: Contains CSS files.
+    API Endpoints
+    GET /api/get-book: Fetches the list of available books.
+    POST /api/borrow-book: Borrows a book.
+    POST /api/return-book: Returns a borrowed book.
+    POST /api/borrow-history: Fetches the borrow history.
